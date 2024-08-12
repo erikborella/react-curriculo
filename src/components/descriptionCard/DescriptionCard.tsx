@@ -57,8 +57,8 @@ const DescriptionCard: React.FC<DescriptionCardProps> = ({ description, interest
                             </Typography>
 
                             <Box component='ul' sx={{ marginTop: 1, paddingLeft: 2 }}>
-                                {interests.map((interest) => (
-                                    <li><Typography variant="body2" textAlign='justify'>{interest}</Typography></li>
+                                {interests.map((interest, index) => (
+                                    <li key={index}><Typography variant="body2" textAlign='justify'>{interest}</Typography></li>
                                 ))}
                             </Box>
                         </Box>
@@ -70,8 +70,8 @@ const DescriptionCard: React.FC<DescriptionCardProps> = ({ description, interest
                         </Typography>
 
                         <Box component='ul' sx={{ marginTop: 1, paddingLeft: 2 }}>
-                            {colleges.map((college) => (
-                                <li><Typography variant="body2" textAlign='justify'>{college}</Typography></li>
+                            {colleges.map((college, index) => (
+                                <li key={index}><Typography variant="body2" textAlign='justify'>{college}</Typography></li>
                             ))}
                         </Box>
                     </Box>

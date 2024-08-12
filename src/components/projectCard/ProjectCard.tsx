@@ -17,6 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({title, imageUrl, description, 
                 height={140}
                 image={imageUrl}
                 alt={title}
+                loading="lazy"
             />
             <Box display='flex' flex={1} flexDirection='column' justifyContent='space-between'>
                 <CardContent sx={{ flexGrow: 1 }}>

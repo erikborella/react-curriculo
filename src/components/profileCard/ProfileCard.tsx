@@ -1,5 +1,6 @@
 import { Card, Avatar, CardContent, Typography, Box, IconButton } from "@mui/material";
-import { Instagram, GitHub } from '@mui/icons-material';
+import InstragramIcon from '@mui/icons-material/Instagram';
+import GithubIcon from '@mui/icons-material/GitHub';
 import React from "react";
 
 interface ProfileCardProps {
@@ -29,6 +30,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, jobTitle, photoUrl, ema
                     alt={name}
                     src={photoUrl}
                     sx={{ width: 100, height: 100 }}
+                    slotProps={{ img: { loading: 'lazy' } }}
                 />
             </Box>
             <CardContent>
@@ -42,10 +44,10 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, jobTitle, photoUrl, ema
                     {email}
                 </Typography>
                 <IconButton href={instagramLink} target="_blank">
-                    <Instagram />
+                    <InstragramIcon />
                 </IconButton>
                 <IconButton href={githubLink} target="_blank">
-                    <GitHub />
+                    <GithubIcon />
                 </IconButton>
             </CardContent>
         </Card>

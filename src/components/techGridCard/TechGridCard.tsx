@@ -25,6 +25,7 @@ const TechGridCard: React.FC<TechGridCardProps> = ({ techs }) => {
                                 <Avatar
                                     alt={tech.name}
                                     src={tech.imageUrl}
+                                    slotProps={{ img: { loading: 'lazy' } }}
                                 />
                                 <Typography variant="body1" sx={{ marginTop: 1 }}>
                                     {tech.name}
