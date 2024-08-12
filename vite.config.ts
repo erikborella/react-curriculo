@@ -7,5 +7,6 @@ export default defineConfig({
     outDir: './build',
     emptyOutDir: true,
   },
+  base: '/react-curriculo/',
   plugins: [react()],
 })
