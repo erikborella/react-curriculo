@@ -7,9 +7,11 @@ interface ProfileCardProps {
     jobTitle: string;
     photoUrl: string;
     email: string;
+    istagramLink: string;
+    githubLink: string;
 }
 
-const ProfileCard: React.FC<ProfileCardProps> = ({ name, jobTitle, photoUrl, email }) => {
+const ProfileCard: React.FC<ProfileCardProps> = ({ name, jobTitle, photoUrl, email, istagramLink: instagramLink, githubLink }) => {
     return (
         <Card
             variant="outlined"
@@ -39,10 +41,10 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, jobTitle, photoUrl, ema
                 <Typography variant="body1" color="text.secondary">
                     {email}
                 </Typography>
-                <IconButton href="https://www.instagram.com/borellaerik/" target="_blank">
+                <IconButton href={instagramLink} target="_blank">
                     <Instagram />
                 </IconButton>
-                <IconButton href="https://www.github.com/erikborella" target="_blank">
+                <IconButton href={githubLink} target="_blank">
                     <GitHub />
                 </IconButton>
             </CardContent>

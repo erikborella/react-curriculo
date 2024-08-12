@@ -70,7 +70,7 @@ const techs = [
     { name: 'Azure', imageUrl: azureIcon },
 ];
 
-const description = 'Desenvolvedor Pleno com mais de 4 anos de experiência em desenvolvimento de software. Atualmente, trabalho na NDD.tech, onde participo de projetos desafiadores na área de P&D. Minhas principais habilidades profissionais incluem C#, Angular e infraestrutura como Docker, Azure e AKS.';
+const description = 'Desenvolvedor Pleno com mais de 4 anos de experiência em desenvolvimento de software. Atualmente, trabalho na NDD.tech, onde participo de projetos desafiadores na área de P&D. Minhas principais habilidades profissionais incluem C#, Angular e infraestrutura como Docker, Azure e AKS. Além disso, estudo na área há mais de 7 anos tendo como principais interesses a área de compiladores e de programação em baixo nivel.';
 const interests = [
     'Compiladores',
     'Programação em baixo nível',
@@ -98,6 +98,8 @@ function App() {
                                 jobTitle='Desenvolvedor Pleno'
                                 photoUrl={profilePhoto}
                                 email='erikborella@gmail.com'
+                                istagramLink='https://www.instagram.com/borellaerik'
+                                githubLink='https://www.github.com/erikborella'
                             />
                         </Box>
                         <Box flex='1'>
@@ -115,7 +117,7 @@ function App() {
                             Projetos
                         </Typography>
 
-                        <Box display='flex' flexWrap='wrap' justifyContent='center' gap={1}>
+                        <Box display='flex' flexWrap='wrap' justifyContent='center' marginTop={2} gap={1}>
                             <Box display='flex' flex={1} minWidth='300px' justifyContent='center'>
                                 <ProjectCard 
                                     title="Compilador LLVM com analise de complexidade de código"

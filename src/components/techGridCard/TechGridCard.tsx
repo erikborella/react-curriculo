@@ -6,7 +6,7 @@ interface TechGridCardProps {
 
 const TechGridCard: React.FC<TechGridCardProps> = ({ techs }) => {
     return (
-        <Card sx={{ padding: 2, minWidth: '350px', height: '100%' }}>
+        <Card variant="outlined" sx={{ padding: 2, minWidth: '350px', height: '100%' }}>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                     Tecnologias
