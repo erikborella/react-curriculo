@@ -131,7 +131,7 @@ function App() {
                                     title="Interpretador AMLBS"
                                     imageUrl={amlbsImage}
                                     description="AMLBS (Another Mathematical Language But Simpler) é um interpretador experimental para uma linguagem funcional simplificada usando como base StackMachines e evaluações de expressões de forma recursiva."
-                                    githubLink="https://github.com/erikborella/RISC-Emulator"
+                                    githubLink="https://github.com/erikborella/AMLBS"
                                 />
                             </Box>
                             <Box display='flex' flex={1} minWidth='300px' justifyContent='center'>
